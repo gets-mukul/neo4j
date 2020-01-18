@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Neo4jApplication {
 
 	public static void main(String[] args) {
-		System.out.println("application started");
 		SpringApplication.run(Neo4jApplication.class, args);
-
 	}
 
 }

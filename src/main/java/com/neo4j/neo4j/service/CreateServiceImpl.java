@@ -2,7 +2,6 @@ package com.neo4j.neo4j.service;
 
 import com.neo4j.neo4j.entity.*;
 import com.neo4j.neo4j.repository.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,7 +16,6 @@ public class CreateServiceImpl implements CreateService {
     private StackRepository stackRepository;
     private TreeRepository treeRepository;
 
-    @Autowired
     public CreateServiceImpl(AnalysisOfAlgorithmRepository analysisOfAlgorithmRepository, ArrayRepository arrayRepository,
                              DataStructureRepository dataStructureRepository, GraphRepository graphRepository,
                              LinkedListRepository linkedListRepository, QueueRepository queueRepository,
@@ -34,7 +32,7 @@ public class CreateServiceImpl implements CreateService {
     }
 
     @Override
-    public String creteNewAoaNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewAoaNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         AnalysisOfAlgorithm aoa = new AnalysisOfAlgorithm();
         aoa.setTitle(title);
@@ -55,7 +53,7 @@ public class CreateServiceImpl implements CreateService {
         return arrayNode.toString();
     }
 
-    public String creteNewDSNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewDSNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         DataStructure dsNode = new DataStructure();
         dsNode.setTitle(title);
@@ -67,7 +65,7 @@ public class CreateServiceImpl implements CreateService {
 
 
     @Override
-    public String creteNewGraphNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewGraphNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         Graph graph = new Graph();
         graph.setTitle(title);
@@ -78,7 +76,7 @@ public class CreateServiceImpl implements CreateService {
     }
 
     @Override
-    public String creteNewLLNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewLLNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         LinkedList ll = new LinkedList();
         ll.setTitle(title);
@@ -89,7 +87,7 @@ public class CreateServiceImpl implements CreateService {
     }
 
     @Override
-    public String creteNewQueueNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewQueueNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         Queue queue = new Queue();
         queue.setTitle(title);
@@ -100,7 +98,7 @@ public class CreateServiceImpl implements CreateService {
     }
 
     @Override
-    public String creteNewStackNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewStackNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         Stack stack = new Stack();
         stack.setTitle(title);
@@ -111,7 +109,7 @@ public class CreateServiceImpl implements CreateService {
     }
 
     @Override
-    public String creteNewTreeNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
+    public String createNewTreeNode(String title, Integer daysToComplete, Boolean isQuestionNode) {
 
         Tree tree = new Tree();
         tree.setTitle(title);

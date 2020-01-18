@@ -4,19 +4,19 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface CreateService {
-    String creteNewAoaNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewAoaNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
     String createNewArrayNode(String title, Integer daysInteger, Boolean isQuestBoolean);
 
-    String creteNewDSNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewDSNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
-    String creteNewGraphNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewGraphNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
-    String creteNewLLNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewLLNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
-    String creteNewQueueNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewQueueNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
-    String creteNewStackNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewStackNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
-    String creteNewTreeNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+    String createNewTreeNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 }

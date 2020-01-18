@@ -24,7 +24,7 @@ public class CreateApi {
     @PostMapping("/node/aoa")
     public String createNewAoaNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                    @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewAoaNode(title, daysToComplete, isQuestionNode);
+        return createService.createNewAoaNode(title, daysToComplete, isQuestionNode);
     }
 
     @PostMapping("/node/array")
@@ -36,43 +36,38 @@ public class CreateApi {
     @PostMapping("/node/ds")
     public String createNewDsNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                   @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewDSNode(title, daysToComplete, isQuestionNode);
+        return createService.createNewDSNode(title, daysToComplete, isQuestionNode);
     }
 
     @PostMapping("/node/graph")
     public String createNewGraphNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                      @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewGraphNode(title, daysToComplete, isQuestionNode);
+        return createService.createNewGraphNode(title, daysToComplete, isQuestionNode);
     }
 
     @PostMapping("/node/ll")
     public String createNewLLNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                   @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewLLNode(title, daysToComplete, isQuestionNode);
+        return createService.createNewLLNode(title, daysToComplete, isQuestionNode);
     }
 
 
     @PostMapping("/node/queue")
     public String createNewQueueNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                      @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewQueueNode(title, daysToComplete, isQuestionNode);
+        return createService.createNewQueueNode(title, daysToComplete, isQuestionNode);
     }
 
     @PostMapping("/node/stack")
     public String createNewStackNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                      @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewStackNode(title, daysToComplete, isQuestionNode);
+        return createService.createNewStackNode(title, daysToComplete, isQuestionNode);
     }
 
     @PostMapping("/node/tree")
     public String createNewTreeNode(@RequestParam String title, @RequestParam Integer daysToComplete,
                                     @RequestParam Boolean isQuestionNode) {
-        return createService.creteNewTreeNode(title, daysToComplete, isQuestionNode);
-    }
-
-    @PostMapping("/relation")
-    public void createNewRelation() {
-
+        return createService.createNewTreeNode(title, daysToComplete, isQuestionNode);
     }
 
 }
