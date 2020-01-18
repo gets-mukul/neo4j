@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public interface CreateService {
     String createNewAoaNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
-    String createNewArrayNode(String title, Integer daysInteger, Boolean isQuestBoolean);
+    String createNewArrayNode(String title, Integer daysToComplete, Boolean isQuestBoolean);
 
     String createNewDSNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
