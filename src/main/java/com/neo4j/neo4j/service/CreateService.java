@@ -19,4 +19,6 @@ public interface CreateService {
     String createNewStackNode(String title, Integer daysToComplete, Boolean isQuestionNode);
 
     String createNewTreeNode(String title, Integer daysToComplete, Boolean isQuestionNode);
+
+    String createNewAoaRelation(String aoaTitle, String node, String title, String relation);
 }

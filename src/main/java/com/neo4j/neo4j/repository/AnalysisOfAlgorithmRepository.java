@@ -15,4 +15,8 @@ public interface AnalysisOfAlgorithmRepository extends Neo4jRepository<AnalysisO
 
     @Query("MATCH (n:AnalysisOfAlgorithm ) RETURN n LIMIT {noOfNodes}")
     Collection<AnalysisOfAlgorithm> getAllAoaNodes(Integer noOfNodes);
+
+    @Query("MATCH (a:AnalysisOfAlgorithm {title:'aoaTitle'}) MATCH (b:node {title:'title'}) " +
+            "CREATE (a) - [:relation] -> (b)")
+    public String createNewAoaRelation(String aoaTitle, String node, String title, String relation);
 }

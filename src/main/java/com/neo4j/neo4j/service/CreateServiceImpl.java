@@ -118,4 +118,10 @@ public class CreateServiceImpl implements CreateService {
         treeRepository.save(tree);
         return tree.toString();
     }
+
+    @Override
+    public String createNewAoaRelation(String aoaTitle, String node, String title, String relation) {
+        analysisOfAlgorithmRepository.createNewAoaRelation(aoaTitle, node, title, relation);
+        return "Aoa relation successful";
+    }
 }

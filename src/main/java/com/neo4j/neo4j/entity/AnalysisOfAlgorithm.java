@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.neo4j.ogm.annotation.NodeEntity;
+import org.neo4j.ogm.annotation.Relationship;
+
+import java.util.List;
 
 @NodeEntity
 @Getter
@@ -15,4 +18,7 @@ public class AnalysisOfAlgorithm {
     private String title;
     private Integer daysToComplete;
     private Boolean isQuestionNode;
+
+    @Relationship(type = "LEVEL_1")
+    private List<Array> array;
 }
